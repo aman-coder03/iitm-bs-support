@@ -8,36 +8,49 @@
 <body>
 
 <h1>End Term Marks Predictor</h1>
-<p>Select your level and subject to predict required end-term marks.</p>
 
-<!-- LEVEL SELECT -->
-<label>Select Your Level</label>
-<select id="levelSelect" onchange="updateSubjects()">
-  <option value="">-- Select Level --</option>
-  <option value="foundation">Foundation</option>
-  <option value="diploma">Diploma</option>
-  <option value="degree">Degree</option>
-</select>
+<p>
+Estimate your end-term score based on your quiz and exam performance.
+This is a prediction, not an official calculation.
+</p>
 
-<br><br>
+<!-- LEVEL TABS -->
+<div class="tabs">
+  <button class="tab active" onclick="selectLevel('foundation', event)">
+    Foundation
+  </button>
+  <button class="tab" onclick="selectLevel('diploma', event)">
+    Diploma
+  </button>
+  <button class="tab" onclick="selectLevel('degree', event)">
+    Degree
+  </button>
+</div>
+
+<br>
 
 <!-- SUBJECT SELECT -->
-<label>Select Your Subject</label>
-<select id="subjectSelect" disabled>
+<label>Select Your Subject</label><br>
+<select id="subjectSelect" onchange="updateInputs()" disabled>
   <option value="">-- Select Subject --</option>
 </select>
 
 <br><br>
 
-<!-- MARK INPUTS -->
-<input type="number" id="currentMarks" placeholder="Current Marks">
-<input type="number" id="targetMarks" placeholder="Target Total Marks">
+<!-- DYNAMIC INPUTS (QUIZZES / OPPEs) -->
+<div id="dynamicInputs"></div>
 
-<br><br>
-
-<button onclick="predictMarks()">Predict</button>
+<!-- ACTION BUTTON -->
+<div style="margin-top: 15px;">
+  <button onclick="predictMarks()">Predict End-Term Score</button>
+</div>
 
 <h2 id="result"></h2>
+
+<p style="font-size: 0.9em; color: gray; margin-top: 10px;">
+  Disclaimer: This tool provides an estimated score based on past performance.
+  Actual end-term results may vary.
+</p>
 
 <script src="../js/predictor.js"></script>
 
