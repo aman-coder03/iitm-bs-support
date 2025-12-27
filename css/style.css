@@ -228,3 +228,19 @@ nav a:hover {
   color: #94a3b8;
   margin-bottom: 12px;
 }
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card ul {
+  margin: 10px 0;
+  padding-left: 18px;
+  color: #9ca3af;
+}
+
+.card ul li {
+  margin-bottom: 5px;
+}
