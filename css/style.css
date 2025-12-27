@@ -244,13 +244,3 @@ nav a:hover {
 .card ul li {
   margin-bottom: 5px;
 }
-
-/* ================= ABOUT PAGE SPECIFIC ================= */
-
-/* Makes the main title massive */
-.about-title {
-  font-size: 4rem;       /* 64px - much larger than standard headers */
-  margin-bottom: 30px;   /* Adds breathing room below the title */
-  color: #ffffff;        /* Pure white for maximum contrast */
-  line-height: 1.1;      /* Tightens the spacing for large text */
-}
