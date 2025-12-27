@@ -1,135 +1,130 @@
 # IITM BS Support
 
-**IITM BS Support** is a student-built, lightweight web platform that provides essential academic tools for students enrolled in the **IIT Madras Bachelor of Science (BS) Programme**.  
-The goal of this project is to help students make informed academic decisions using **accurate, fast, and easy-to-use tools** — without logins, tracking, or unnecessary complexity.
+IITM BS Support is a student-built, browser-based platform that provides academic assistance tools for students enrolled in the IIT Madras Bachelor of Science (BS) Programme. The project aims to simplify common academic calculations and reduce ambiguity around grades, CGPA, and exam performance using clear, accurate, and easily accessible tools.
+
+The platform is intentionally designed to be lightweight, privacy-focused, and fully client-side, requiring no login, backend services, or data storage.
 
 ---
 
-## 🎯 Purpose of the Project
+## Project Motivation
 
-Students in the IIT Madras BS program often need quick ways to:
-- Calculate their CGPA correctly
-- Understand grade outcomes from marks
-- Estimate end-term performance in advance
+Students in the IIT Madras BS programme frequently need to:
+- Calculate CGPA accurately across different program levels
+- Convert marks into grades using the official grading scheme
+- Estimate end-term performance based on internal assessments
 
-This platform consolidates these needs into a single, simple interface built **by students, for students**.
-
----
-
-## 👥 Who Is This For?
-
-- IIT Madras BS students at:
-  - Foundation Level
-  - Diploma Level
-  - Degree Level
-- Students who want:
-  - Quick academic calculations
-  - Clear insights into grades and performance
-  - A no-login, privacy-first experience
+These tasks are often repetitive and error-prone when done manually. IITM BS Support centralizes these calculations into a single platform to help students make informed academic decisions quickly and reliably.
 
 ---
 
-## 🛠️ Available Tools
+## Intended Audience
 
-### 🎓 CGPA Calculator
-Calculate your cumulative GPA using course credits and grades across different program levels.
-
-Features:
-- Supports Foundation, Diploma, and Degree levels
-- Credit-accurate calculations
-- Instant results with clean UI
+This project is intended for:
+- Students enrolled in the IIT Madras BS programme (Foundation, Diploma, and Degree levels)
+- Learners who want quick academic clarity without complex tools or spreadsheets
+- Contributors interested in educational, student-focused open-source projects
 
 ---
 
-### 📝 Grade Calculator
-Convert raw marks into grades using the official **IIT Madras grading scale**.
+## Tools Provided
 
-Features:
+### CGPA Calculator
+
+The CGPA Calculator allows students to compute their cumulative grade point average using course credits and grades.
+
+Details:
+- Supports Foundation, Diploma, and Degree program structures
+- Uses credit-weighted GPA calculation
+- Provides instant results within the browser
+
+---
+
+### Grade Calculator
+
+The Grade Calculator converts raw marks into grades based on the IIT Madras grading scale.
+
+Details:
 - Simple mark-based input
-- Accurate grade mapping
-- No sign-up required
+- Maps marks to grades accurately
+- Does not require login or data submission
 
 ---
 
-### 📌 End-Term Marks Predictor
-Estimate your end-term exam score based on:
-- Quiz performance
-- OPPE performance
+### End-Term Marks Predictor
 
-Features:
-- Subject-wise prediction
-- Works for theory and programming courses
-- Helpful for exam planning and strategy
+The End-Term Marks Predictor estimates expected end-term exam scores using internal assessment data such as quizzes and OPPEs.
 
----
-
-## ⭐ Key Features
-
-- Accurate calculations based on IIT Madras rules
-- No login, no user tracking
-- Fast, lightweight, and responsive
-- Mobile-friendly design
-- Completely free to use
+Details:
+- Supports subject-wise prediction
+- Works for both theory and programming courses
+- Useful for academic planning and performance evaluation
 
 ---
 
-## 📂 Project Structure
+## Key Characteristics
+
+- Fully client-side implementation using HTML, CSS, and JavaScript
+- No backend, authentication, or data persistence
+- Fast load times and minimal dependencies
+- Responsive layout suitable for desktop and mobile browsers
+- Free to use and open for community contributions
+
+---
+
+## Repository Structure
 
     iitm-bs-support/
-    ├── css/
-    ├── js/
-    ├── pages/
-    ├── tools/
+    ├── css/                Stylesheets for layout and design
+    ├── js/                 JavaScript logic for calculations
+    ├── pages/              Static informational pages
+    │   ├── about.html
+    │   ├── privacy-policy.html
+    │   ├── terms-of-use.html
+    │   └── disclaimer.html
+    ├── tools/              Individual academic tools
     │   ├── cgpa-calculator.html
     │   ├── grade-calculator.html
     │   └── endterm-predictor.html
-    ├── index.html
-    ├── tools.html
-    └── README.md
+    ├── index.html          Main landing page
+    ├── tools.html          Tools overview page
+    ├── README.md           Project documentation
+    └── CONTRIBUTING.md     Contribution guidelines
 
 ---
 
-## 🚀 How to Use
+## Usage Instructions
 
 1. Clone or download the repository:
 
         git clone https://github.com/aman-coder03/iitm-bs-support.git
 
-2. Open `index.html` in any modern web browser.
-3. Navigate to the **Tools** section.
-4. Choose a tool and start using it instantly.
+2. Open the `index.html` file in any modern web browser.
+3. Navigate to the Tools section.
+4. Select the required tool and use it directly.
 
-No installation, no backend, and no configuration required.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-You can help by:
-- Improving documentation
-- Enhancing UI/UX
-- Adding new academic tools
-- Fixing bugs or improving calculations
-
-Steps to contribute:
-1. Fork the repository
-2. Create a new branch
-3. Make your changes
-4. Open a pull request with a clear description
+No installation steps, backend configuration, or additional setup is required.
 
 ---
 
-## ⚠️ Disclaimer
+## Documentation Overview
 
-This project is a **student-led initiative** and is **not an official product of IIT Madras**.  
-All calculations are intended for **informational and planning purposes only**.  
-Students should always verify academic decisions with official IIT Madras sources.
+- README.md provides an overview of the project, its purpose, and available tools.
+- CONTRIBUTING.md outlines contribution guidelines, workflow, and best practices for collaborators.
 
 ---
 
-## 🙌 Acknowledgements
+## Contribution Policy
 
-Built by students of the IIT Madras BS program to support the student community.
+Contributions are encouraged, especially in areas such as:
+- Improving documentation clarity
+- Enhancing UI or user experience
+- Fixing bugs or edge cases in calculations
+- Adding new academic tools relevant to the IIT Madras BS curriculum
 
+Please refer to CONTRIBUTING.md before submitting a pull request.
+
+---
+
+## Disclaimer
+
+This project is a student-led initiative and is not affiliated with or officially endorsed by IIT Madras. All calculations and predictions are intended for informational and planning purposes only. Students should always verify important academic decisions with official IIT Madras resources.
