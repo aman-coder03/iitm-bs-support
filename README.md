@@ -15,10 +15,39 @@ IITM BS Support is a student-built web platform that provides academic tools for
 - CSS
 - JavaScript
 
-## Available Tools
-- CGPA Calculator
-- Grade Calculator
-- End-Term Marks Predictor
+## Available Tools and Use Cases
+
+### 1. CGPA Calculator
+**Purpose:**  
+Helps students calculate their cumulative GPA accurately using the IIT Madras BS credit and grading structure.
+
+**Use Cases:**
+- Calculate overall CGPA across Foundation, Diploma, and Degree levels
+- Understand credit-weighted GPA impact of each course
+- Plan future semesters by simulating grade outcomes
+
+---
+
+### 2. Grade Calculator
+**Purpose:**  
+Converts raw marks into letter grades based on the official IIT Madras grading scale.
+
+**Use Cases:**
+- Quickly determine grade from quiz or exam marks
+- Verify expected grades before official results
+- Understand grading thresholds (S, A, B, C, D, E, U)
+
+---
+
+### 3. End-Term Marks Predictor
+**Purpose:**  
+Estimates end-term exam scores based on quiz, assignment, and OPPE performance.
+
+**Use Cases:**
+- Predict required end-term marks to achieve a target grade
+- Analyze performance trends during the course
+- Support academic planning and risk assessment
+
 
 ## Project Structure
 - `css/` – Stylesheets  
