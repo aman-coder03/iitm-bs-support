@@ -5,79 +5,114 @@
   <title>Tools | IITM BS Support</title>
 
   <meta name="description"
-        content="Academic tools for IIT Madras BS students including CGPA calculator, grade calculator, and end-term predictor.">
+        content="Academic tools for IIT Madras BS students including CGPA calculator, grade calculator, and end-term marks predictor.">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
 <nav>
   <a href="index.html"><strong>IITM BS Support</strong></a>
-  <a href="tools.html">Tools</a>
+  <a href="tools.html" class="active">Tools</a>
   <a href="pages/about.html">About</a>
+  <a href="pages/contact.html">Contact</a>
 </nav>
 
-<header>
+<!-- ================= BREADCRUMB ================= -->
+<nav class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span>›</span>
+  <span>Tools</span>
+</nav>
+
+<!-- ================= HEADER ================= -->
+<header class="hero">
   <h1>Academic Tools</h1>
   <p>
-    Use these tools to plan, calculate, and understand your academic progress
-    in the IIT Madras BS program.
+    Plan, calculate, and understand your academic progress in the
+    <strong>IIT Madras BS program</strong> using these tools.
   </p>
 </header>
 
-<section class="tools-grid">
+<!-- ================= TOOLS GRID ================= -->
+<section>
+  <h2>Available Tools</h2>
+  <p class="section-subtext">
+    Choose a tool below to get started.
+  </p>
 
-  <div class="card">
-    <h3>🎓 CGPA Calculator</h3>
-    <p>
-      Calculate your CGPA using course credits and grades
-      across Foundation, Diploma, and Degree levels.
-    </p>
-    <ul>
-      <li>Supports all program levels</li>
-      <li>Credit-accurate calculation</li>
-      <li>Instant results</li>
-    </ul>
-    <a class="btn" href="tools/cgpa-calculator.html">Open CGPA Calculator</a>
+  <div class="tools-grid">
+
+    <!-- CGPA -->
+    <div class="card tool-card">
+      <h3>🎓 CGPA Calculator</h3>
+      <p>
+        Calculate your CGPA accurately using course credits and grades
+        across Foundation, Diploma, and Degree levels.
+      </p>
+      <ul>
+        <li>Supports all program levels</li>
+        <li>Credit-accurate calculation</li>
+        <li>Instant results</li>
+      </ul>
+      <a class="btn primary" href="tools/cgpa-calculator.html">
+        Open CGPA Calculator →
+      </a>
+    </div>
+
+    <!-- Grade -->
+    <div class="card tool-card">
+      <h3>📝 Grade Calculator</h3>
+      <p>
+        Convert raw marks into grades using the official
+        IIT Madras grading scale.
+      </p>
+      <ul>
+        <li>Simple mark input</li>
+        <li>Accurate grade mapping</li>
+        <li>No login required</li>
+      </ul>
+      <a class="btn" href="tools/grade-calculator.html">
+        Open Grade Calculator →
+      </a>
+    </div>
+
+    <!-- End Term -->
+    <div class="card tool-card">
+      <h3>📌 End-Term Marks Predictor</h3>
+      <p>
+        Predict your end-term exam score based on quiz
+        and exam performance.
+      </p>
+      <ul>
+        <li>Subject-wise prediction</li>
+        <li>Theory & programming support</li>
+        <li>Helpful for exam planning</li>
+      </ul>
+      <a class="btn" href="tools/endterm-predictor.html">
+        Open Predictor →
+      </a>
+    </div>
+
   </div>
-
-  <div class="card">
-    <h3>📝 Grade Calculator</h3>
-    <p>
-      Convert raw marks into grades using the official
-      IIT Madras grading scale.
-    </p>
-    <ul>
-      <li>Simple mark input</li>
-      <li>Accurate grade mapping</li>
-      <li>No login required</li>
-    </ul>
-    <a class="btn" href="tools/grade-calculator.html">Open Grade Calculator</a>
-  </div>
-
-  <div class="card">
-    <h3>📌 End-Term Marks Predictor</h3>
-    <p>
-      Predict your end-term exam score based on
-      quiz and OPPE performance.
-    </p>
-    <ul>
-      <li>Subject-wise prediction</li>
-      <li>Supports theory & programming courses</li>
-      <li>Helpful for planning</li>
-    </ul>
-    <a class="btn" href="tools/endterm-predictor.html">Open Predictor</a>
-  </div>
-
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer>
-  <a href="pages/contact.html">Contact</a> |
-  <a href="pages/privacy-policy.html">Privacy Policy</a> |
-  <a href="pages/terms-of-use.html">Terms of Use</a> |
-  <a href="pages/disclaimer.html">Disclaimer</a>
+  <p>
+    © 2025 IITM BS Support • Student-led initiative
+  </p>
+
+  <p>
+    <a href="pages/contact.html">Contact</a> |
+    <a href="pages/privacy-policy.html">Privacy Policy</a> |
+    <a href="pages/terms-of-use.html">Terms of Use</a> |
+    <a href="pages/disclaimer.html">Disclaimer</a>
+  </p>
 </footer>
 
 </body>

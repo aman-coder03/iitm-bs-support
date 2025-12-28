@@ -1,238 +1,154 @@
 /* ================= GLOBAL ================= */
 
 body {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
   margin: 0;
-  padding: 30px;
+  padding: 32px;
   background: #0b1220;
   color: #e5e7eb;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4 {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: #ffffff;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.2rem;
 }
 
 p {
   color: #9ca3af;
+  max-width: 720px;
+}
+
+/* ================= LINKS (NO BLUE!) ================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ================= NAVBAR ================= */
+
+nav,
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: #c7d2fe;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.nav-links a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #6366f1;
+  padding-bottom: 2px;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  border: 1px solid #1f2937;
+  border-radius: 18px;
+  padding: 36px;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  margin-top: 10px;
 }
 
 /* ================= BUTTONS ================= */
 
-button {
-  background: #2563eb;
-  color: #fff;
+button,
+.btn {
+  display: inline-block;
+  background: #4f46e5;
+  color: #ffffff;
   border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
+  padding: 10px 18px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.15s ease;
 }
 
-button:hover {
-  background: #1d4ed8;
+button:hover,
+.btn:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #6366f1, #7c3aed);
+}
+
+.btn.primary:hover {
+  background: linear-gradient(135deg, #4f46e5, #6d28d9);
 }
 
 button:disabled {
   background: #374151;
   cursor: not-allowed;
+  transform: none;
 }
 
 /* ================= INPUTS ================= */
 
-select, input {
+select,
+input {
   background: #0f172a;
   color: #e5e7eb;
   border: 1px solid #1f2937;
-  padding: 6px 10px;
-  border-radius: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
 select {
   min-width: 260px;
 }
 
-/* ================= STEP SECTIONS ================= */
+/* ================= SECTIONS ================= */
 
 section {
   background: linear-gradient(180deg, #0f172a, #020617);
-  padding: 20px;
-  border-radius: 12px;
-  margin-top: 20px;
+  padding: 24px;
+  border-radius: 16px;
+  margin-top: 24px;
   border: 1px solid #1f2937;
 }
 
-/* ================= COURSE LIST ================= */
+/* ================= CARDS ================= */
 
-#courseList > div {
+.card {
   background: #020617;
   border: 1px solid #1f2937;
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-/* ================= CGPA CARD ================= */
-
-.cgpa-card {
-  background: linear-gradient(135deg, #1e3a8a, #6d28d9);
   padding: 20px;
   border-radius: 16px;
-  margin-bottom: 20px;
-}
-
-.cgpa-card h1 {
-  font-size: 48px;
-  margin: 10px 0;
-}
-
-.cgpa-card p {
-  color: #dbeafe;
-}
-
-/* ================= PROGRESS BAR ================= */
-
-.progress-bar {
-  background: rgba(255, 255, 255, 0.15);
-  height: 8px;
-  border-radius: 6px;
-  overflow: hidden;
-  margin-top: 10px;
-}
-
-#cgpaProgress {
-  height: 100%;
-  width: 0%;
-  background: #60a5fa;
-  transition: width 0.5s ease;
-}
-
-/* ================= SUB CARD ================= */
-
-.sub-card {
-  background: #020617;
-  border: 1px solid #1f2937;
-  padding: 16px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-/* ================= GRADE SUMMARY ================= */
-
-.grade-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 12px;
-  margin-top: 10px;
-}
-
-.grade-grid div {
-  background: #020617;
-  border: 1px solid #1f2937;
-  padding: 14px;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.grade-grid span {
-  font-size: 22px;
-  display: block;
-  margin-top: 5px;
-}
-
-/* ================= GRADE SCALE ================= */
-
-.grade-scale {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.grade-scale span {
-  background: #020617;
-  border: 1px solid #1f2937;
-  padding: 6px 10px;
-  border-radius: 6px;
-  font-size: 13px;
-}
-
-/* ================= NAV (OPTIONAL) ================= */
-
-nav a {
-  color: #60a5fa;
-  margin-right: 15px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 768px) {
-  .grade-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .cgpa-card h1 {
-    font-size: 36px;
-  }
-}
-.program-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
   margin-top: 20px;
 }
 
-.program-card {
-  background: #0f172a;
-  border: 1px solid #1e293b;
-  border-radius: 12px;
-  padding: 18px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  position: relative;
-}
-
-.program-card:hover {
-  border-color: #3b82f6;
-}
-
-.program-card.active {
-  border: 2px solid #3b82f6;
-  background: linear-gradient(135deg, #0f172a, #1e3a8a);
-}
-
-.program-card.disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.checkmark {
-  color: #3b82f6;
-  font-size: 18px;
-}
-
-.step-desc {
-  color: #94a3b8;
-  margin-bottom: 12px;
-}
-
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+.card h3 {
+  margin-bottom: 6px;
 }
 
 .card ul {
@@ -242,6 +158,174 @@ nav a:hover {
 }
 
 .card ul li {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
+/* ================= COURSE LIST ================= */
+
+#courseList > div,
+.course-row {
+  background: #020617;
+  border: 1px solid #1f2937;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* ================= CGPA CARD ================= */
+
+.cgpa-card {
+  background: linear-gradient(135deg, #312e81, #6d28d9);
+  padding: 24px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.cgpa-card h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.cgpa-card p {
+  color: #e0e7ff;
+}
+
+/* ================= PROGRESS BAR ================= */
+
+.progress-bar {
+  background: rgba(255, 255, 255, 0.15);
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+#cgpaProgress {
+  height: 100%;
+  width: 0%;
+  background: #a5b4fc;
+  transition: width 0.6s ease;
+}
+
+/* ================= SUB CARD ================= */
+
+.sub-card {
+  background: #020617;
+  border: 1px solid #1f2937;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+/* ================= GRADE SUMMARY ================= */
+
+.grade-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.grade-grid div {
+  background: #020617;
+  border: 1px solid #1f2937;
+  padding: 14px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.grade-grid span {
+  font-size: 22px;
+  display: block;
+  margin-top: 6px;
+}
+
+/* ================= GRADE SCALE ================= */
+
+.grade-scale {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.grade-scale span {
+  background: #020617;
+  border: 1px solid #1f2937;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+/* ================= PROGRAM SELECT ================= */
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.program-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.program-card:hover {
+  border-color: #6366f1;
+  transform: translateY(-2px);
+}
+
+.program-card.active {
+  border: 2px solid #6366f1;
+  background: linear-gradient(135deg, #0f172a, #312e81);
+}
+
+.program-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .grade-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cgpa-card h1 {
+    font-size: 2.2rem;
+  }
+
+  nav,
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+}
+
+.section-subtext {
+  color: #94a3b8;
+  margin-bottom: 18px;
+}
+
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+}

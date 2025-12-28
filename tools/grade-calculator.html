@@ -1,19 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Grade Calculator</title>
+  <meta charset="UTF-8">
+  <title>Grade Calculator | IITM BS Support</title>
+
+  <meta name="description"
+        content="Advanced grade calculator for IIT Madras BS students. Calculate grades and CGPA using official evaluation rules.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<h1>Grade Calculator</h1>
+<!-- NAV -->
+<nav>
+  <a href="../index.html"><strong>IITM BS Support</strong></a>
+  <a href="../tools.html">Tools</a>
+  <a href="../blog/how-to-calculate-cgpa.html">Blog</a>
+</nav>
 
-<input type="number" id="marks" placeholder="Enter marks">
-<button onclick="calculateGrade()">Calculate Grade</button>
+<!-- HEADER -->
+<header class="hero">
+  <h1>Grade Calculator</h1>
+  <p>Calculate grades using official IIT Madras evaluation logic</p>
+</header>
 
-<h2 id="gradeResult"></h2>
+<!-- INPUT SECTION -->
+<section class="sub-card">
+  <h2>Add Course</h2>
 
-<script src="../js/grade.js"></script>
+  <!-- LEVEL SELECT -->
+  <select id="levelSelect">
+    <option value="foundation">Foundation</option>
+    <option value="diploma">Diploma</option>
+    <option value="degree">Degree</option>
+  </select>
+
+  <!-- COURSE SELECT -->
+  <select id="courseSelect">
+    <option value="">Select course</option>
+  </select>
+
+  <!-- DYNAMIC INPUTS -->
+  <div class="grade-inputs" id="dynamicInputs"></div>
+
+  <button onclick="addCourse()">Add Course</button>
+</section>
+
+<!-- COURSE TABLE -->
+<section>
+  <table class="grade-table">
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>Final Score</th>
+        <th>Grade</th>
+        <th>Points</th>
+        <th>Credits</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="courseTable"></tbody>
+  </table>
+</section>
+
+<!-- CGPA -->
+<section class="cgpa-card">
+  <h3>CGPA</h3>
+  <h1 id="cgpaValue">0.00</h1>
+</section>
+
+<script src="../js/course-rules.js"></script>
+<script src="../js/grade-calculator.js"></script>
 </body>
 </html>
