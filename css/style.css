@@ -61,23 +61,6 @@ body::before {
   z-index: -1;
 }
 
-body::after {
-  content: "";
-  position: fixed;
-  bottom: -200px;
-  right: -200px;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(124,58,237,0.35), transparent 70%);
-  filter: blur(140px);
-  animation: floatGlow2 12s infinite alternate ease-in-out;
-  z-index: -1;
-}
-
-@keyframes floatGlow2 {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(-80px, -60px); }
-}
 
 /* ================= TYPOGRAPHY ================= */
 
@@ -147,9 +130,8 @@ nav,
 /* ================= HERO ================= */
 
 .hero {
-  background: rgba(15, 23, 42, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: #0f172a;
+  -webkit-backdrop-filter: blur(6px);
 
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 20px;
@@ -271,11 +253,9 @@ section {
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   border-color: rgba(99,102,241,0.6);
-  box-shadow:
-    0 0 0 1px rgba(99,102,241,0.4),
-    0 25px 70px rgba(99,102,241,0.25);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
 .card ul {
