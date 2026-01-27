@@ -9,6 +9,7 @@ The platform provides a suite of essential academic utilities that help students
 ## 🎯 Project Objective
 
 Students enrolled in the IIT Madras BS programme frequently require dependable tools to:
+
 - Calculate CGPA across Foundation, Diploma, and Degree levels
 - Convert numerical marks into grades using official grading policies
 - Anticipate end-term examination outcomes based on internal assessments
@@ -21,6 +22,7 @@ Manual evaluation methods are often time-consuming and prone to inaccuracies.
 ## 👥 Intended Audience
 
 This platform is designed for:
+
 - Students enrolled in the IIT Madras BS programme:
   - Foundation Level
   - Diploma Level
@@ -37,6 +39,7 @@ The project also welcomes contributors interested in developing high-quality, st
 ## 🛠️ Academic Tools
 
 ### 🎓 CGPA Calculator
+
 Calculates cumulative grade point average using course credits and assigned grades.
 
 **Key Capabilities**
@@ -47,6 +50,7 @@ Calculates cumulative grade point average using course credits and assigned grad
 ---
 
 ### 📝 Grade Calculator
+
 Translates raw marks into official grades in accordance with IIT Madras grading standards.
 
 **Key Capabilities**
@@ -57,6 +61,7 @@ Translates raw marks into official grades in accordance with IIT Madras grading 
 ---
 
 ### 📌 End-Term Performance Estimator
+
 Estimates potential end-term examination scores using internal assessment data.
 
 **Key Capabilities**
@@ -79,38 +84,36 @@ Estimates potential end-term examination scores using internal assessment data.
 
 ## 📂 Repository Structure
 
-tm-bs-support/
-├── css/ Styling and layout resources
-├── js/ Core calculation logic
-├── pages/ Static informational content
-│ ├── about.html
-│ ├── privacy-policy.html
-│ ├── terms-of-use.html
-│ └── disclaimer.html
-├── tools/ Academic utilities
-│ ├── cgpa-calculator.html
-│ ├── grade-calculator.html
-│ └── endterm-predictor.html
-├── index.html Main landing page
-├── tools.html Tools overview page
+```text
+iitm-bs-support/
+├── css/                  Styling and layout resources
+├── js/                   Core calculation logic
+├── pages/                Static informational content
+│   ├── about.html
+│   ├── privacy-policy.html
+│   ├── terms-of-use.html
+│   └── disclaimer.html
+├── tools/                Academic utilities
+│   ├── cgpa-calculator.html
+│   ├── grade-calculator.html
+│   └── endterm-predictor.html
+├── index.html             Main landing page
+├── tools.html             Tools overview page
 ├── README.md
 └── CONTRIBUTING.md
-
+```
 
 ---
 
 ## 🚀 Getting Started
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/aman-coder03/iitm-bs-support.git
-
+```bash
+git clone https://github.com/aman-coder03/iitm-bs-support.git
+```
 2. Open index.html in any modern web browser.
-
 3. Navigate to the Tools section.
-
 4. Select the desired tool and begin using it immediately.
-
 5. No installation, configuration, or backend setup is required.
 
 ## 🤝 Contributions
@@ -119,15 +122,11 @@ Contributions are encouraged and appreciated.
 
 You may contribute by:
 
-Enhancing documentation clarity and structure
-
-Improving user interface and user experience
-
-Fixing bugs or addressing edge cases
-
-Refining calculation accuracy
-
-Developing additional academic tools relevant to the IIT Madras BS curriculum
+1. Enhancing documentation clarity and structure
+2. Improving user interface and user experience
+3. Fixing bugs or addressing edge cases
+4. Refining calculation accuracy
+5. Developing additional academic tools relevant to the IIT Madras BS curriculum
 
 Please review CONTRIBUTING.md before submitting a pull request.
 
