@@ -6,7 +6,7 @@ The platform provides a suite of essential academic utilities that help students
 
 ---
 
-## 🎯 Project Objective
+##  Project Objective
 
 Students enrolled in the IIT Madras BS programme frequently require dependable tools to:
 
@@ -19,7 +19,7 @@ Manual evaluation methods are often time-consuming and prone to inaccuracies.
 
 ---
 
-## 👥 Intended Audience
+##  Intended Audience
 
 This platform is designed for:
 
@@ -36,9 +36,9 @@ The project also welcomes contributors interested in developing high-quality, st
 
 ---
 
-## 🛠️ Academic Tools
+##  Academic Tools
 
-### 🎓 CGPA Calculator
+###  CGPA Calculator
 
 Calculates cumulative grade point average using course credits and assigned grades.
 
@@ -49,7 +49,7 @@ Calculates cumulative grade point average using course credits and assigned grad
 
 ---
 
-### 📝 Grade Calculator
+###  Grade Calculator
 
 Translates raw marks into official grades in accordance with IIT Madras grading standards.
 
@@ -60,7 +60,7 @@ Translates raw marks into official grades in accordance with IIT Madras grading 
 
 ---
 
-### 📌 End-Term Performance Estimator
+###  End-Term Performance Estimator
 
 Estimates potential end-term examination scores using internal assessment data.
 
@@ -71,7 +71,7 @@ Estimates potential end-term examination scores using internal assessment data.
 
 ---
 
-## ⭐ Platform Highlights
+##  Platform Highlights
 
 - Calculations aligned with IIT Madras academic regulations
 - Fully client-side architecture (HTML, CSS, JavaScript)
@@ -82,7 +82,7 @@ Estimates potential end-term examination scores using internal assessment data.
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```text
 iitm-bs-support/
@@ -105,7 +105,7 @@ iitm-bs-support/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Clone the repository:
 ```bash
@@ -116,7 +116,7 @@ git clone https://github.com/aman-coder03/iitm-bs-support.git
 4. Select the desired tool and begin using it immediately.
 5. No installation, configuration, or backend setup is required.
 
-## 🤝 Contributions
+##  Contributions
 
 Contributions are encouraged and appreciated.
 
@@ -130,7 +130,7 @@ You may contribute by:
 
 Please review CONTRIBUTING.md before submitting a pull request.
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This project is an independent student initiative and is not affiliated with or officially endorsed by IIT Madras.
 
